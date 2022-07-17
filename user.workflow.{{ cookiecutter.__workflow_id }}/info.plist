@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.github.{{ cookiecutter.github_organization }}.{{ cookiecutter.github_repository }}</string>
+	<key>category</key>
+	<string>{{ cookiecutter.workflow_category }}</string>
+	<key>connections</key>
+	<dict>
+		<key>{{ cookiecutter.__script_filter_id }}</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>{{ cookiecutter.__clipboard_id }}</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>{{ cookiecutter.author_name }}</string>
+	<key>description</key>
+	<string>{{ cookiecutter.workflow_description }} {{ cookiecutter.workflow_emoji }}</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>{{ cookiecutter.workflow_name }}</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>{{ cookiecutter.__clipboard_id }}</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>{{ cookiecutter.action_keyword }}</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./dist/main $@</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>{{ cookiecutter.action_title }}</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>{{ cookiecutter.__script_filter_id }}</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>{{ cookiecutter.workflow_description }} {{ cookiecutter.workflow_emoji }}</string>
+	<key>uidata</key>
+	<dict>
+		<key>{{ cookiecutter.__script_filter_id }}</key>
+		<dict>
+			<key>xpos</key>
+			<real>30</real>
+			<key>ypos</key>
+			<real>15</real>
+		</dict>
+		<key>{{ cookiecutter.__clipboard_id }}</key>
+		<dict>
+			<key>xpos</key>
+			<real>280</real>
+			<key>ypos</key>
+			<real>15</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
+	<key>version</key>
+	<string>{{ cookiecutter.workflow_version }}</string>
+	<key>webaddress</key>
+	<string>{{ cookiecutter.github_url }}</string>
+</dict>
+</plist>

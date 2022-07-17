@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "{{ cookiecutter.workflow_name }}"
+version = "{{ cookiecutter.workflow_version }}"
+description = "{{ cookiecutter.workflow_description }}"
+documentation = "{{ cookiecutter.github_url }}/blob/main/README.md"
+homepage = "{{ cookiecutter.github_url }}"
+license = "MIT"
+
+authors = [
+    "{{ cookiecutter.author_name }} <{{ cookiecutter.author_email }}>"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+alfred-pyflow = "latest"
+
+[tool.poetry.dev-dependencies]
+black = "latest"
+coverage = "latest"
+ddt = "latest"
+pyinstaller = "latest"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

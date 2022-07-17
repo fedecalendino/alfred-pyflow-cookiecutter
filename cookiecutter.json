@@ -1,0 +1,18 @@
+{
+  "workflow_name": "Fortune Cookie",
+  "workflow_description": "Read your fortune!",
+  "workflow_category": ["Productivity", "Tools", "Internet"],
+  "workflow_emoji": "\uD83E\uDD60️",
+  "workflow_version": "0.1.0",
+  "action_keyword": "fc",
+  "action_title": "Get your fortune cookie here",
+  "author_name": "Fede Calendino",
+  "author_email": "fede@calendino.com",
+  "github_organization": "fedecalendino",
+  "github_repository": "alfred-{{ cookiecutter.workflow_name.lower().replace(' ', '-') }}",
+  "github_url": "https://github.com/{{ cookiecutter.github_organization }}/{{ cookiecutter.github_repository }}",
+  "__workflow_id": "{{ uuid4().upper() }}",
+  "__script_filter_id": "{{ uuid4().upper() }}",
+  "__clipboard_id": "{{ uuid4().upper() }}",
+  "__year": "2022"
+}
