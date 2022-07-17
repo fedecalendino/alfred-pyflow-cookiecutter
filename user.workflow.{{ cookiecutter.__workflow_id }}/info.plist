@@ -85,9 +85,9 @@
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string></string>
+				<string>{{ cookiecutter.action_placeholder_subtitle }}</string>
 				<key>title</key>
-				<string>{{ cookiecutter.action_title }}</string>
+				<string>{{ cookiecutter.action_placeholder_title }}</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>

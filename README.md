@@ -66,7 +66,8 @@ Choose from 1, 2, 3 [1]:
 workflow_emoji [🥠️]:
 workflow_version [0.1.0]:
 action_keyword [fc]:
-action_title [Get your fortune cookie here]:
+action_placeholder_title [get your fortune cookie here]:
+action_placeholder_subtitle [fc [amount:1]]:
 author_name [Fede Calendino]:
 author_email [fede@calendino.com]:
 github_organization [fedecalendino]:
