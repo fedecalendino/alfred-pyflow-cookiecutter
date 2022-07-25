@@ -12,13 +12,13 @@ authors = [
 
 [tool.poetry.dependencies]
 python = ">=3.8,<3.11"
-alfred-pyflow = "latest"
+alfred-pyflow = "*"
 
 [tool.poetry.dev-dependencies]
-black = "latest"
-coverage = "latest"
-ddt = "latest"
-pyinstaller = "latest"
+black = "*"
+coverage = "*"
+ddt = "*"
+pyinstaller = "*"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
