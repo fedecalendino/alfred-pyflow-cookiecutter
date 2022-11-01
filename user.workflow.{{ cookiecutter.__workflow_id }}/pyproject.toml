@@ -16,7 +16,6 @@ alfred-pyflow = "latest"
 
 [tool.poetry.dev-dependencies]
 black = "latest"
-pyinstaller = "latest"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
