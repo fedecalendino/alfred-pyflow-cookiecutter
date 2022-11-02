@@ -135,7 +135,7 @@
 				<true/>
 			</dict>
 			<key>description</key>
-			<string></string>
+			<string>Keyword to {{ cookiecutter.workflow_description.lower() }}.</string>
 			<key>label</key>
 			<string>{{ cookiecutter.workflow_name }} Keyword</string>
 			<key>type</key>

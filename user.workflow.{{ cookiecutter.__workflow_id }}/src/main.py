@@ -10,7 +10,7 @@ def main(workflow):
     if len(workflow.args) > 0:
         amount = min(10, int(workflow.args[0].lower()))
     else:
-        amount = 1
+        amount = 5
 
     for fortune in random.sample(FORTUNES, amount):
         numbers = ' '.join(map(str, random.sample(range(1, 100), 6)))
