@@ -99,3 +99,16 @@ Anything can be changed after the cookiecutter is used by following this folder 
 
 
 ![workflow file structure](./img/filestructure.png)
+
+
+# USAGE
+
+To give it a try you can run the following script
+
+```bash
+poetry run cookiecutter {location of this project}  # run the cookie cutter
+cd */                                               # change to the generated directory
+poetry install                                      # install the python environment
+./scripts/release.sh                                # execute the release script
+open ./releases/*                                   # open the generated release file with Alfred.app         
+```
