@@ -10,9 +10,9 @@ python = "^3.8"
 cookiecutter = "^2"
 
 [tool.poetry.dev-dependencies]
-black = "latest"
-coverage = "latest"
-ddt = "latest"
+black = "^23.3.0"
+coverage = "^7.2.5"
+ddt = "^1.6.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
