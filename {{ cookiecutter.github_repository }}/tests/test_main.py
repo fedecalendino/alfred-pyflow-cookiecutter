@@ -4,7 +4,7 @@ from data import FORTUNES
 from main import main
 
 
-class TestWorkflow(WorklowTestCase):
+class TestMain(WorklowTestCase):
     def test_run(self):
         envs = {}
         args = ["3"]
