@@ -6,7 +6,7 @@ from pyflow import Workflow
 from data import FORTUNES
 
 
-def main(workflow):
+def main(workflow: Workflow):
     if len(workflow.args) > 0:
         amount = min(10, int(workflow.args[0].lower()))
     else:
